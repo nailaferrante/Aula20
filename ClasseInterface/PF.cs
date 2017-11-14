@@ -20,7 +20,14 @@ namespace ClasseInterface
         }
         public string Cadastro()
         {
-            throw new System.NotImplementedException();
+            string composicao = "Id do Cliente: "+Id+
+                                "\nNome do Cliente: "+Nome+
+                                "\nEndereço: "+End.Logradouro+" , "+End.Numero+" , "+End.Bairro+
+                                "\ntelefone: "+Telefone+
+                                "\nCPF: "+CPF+
+                                "\nE-mail: "+Email;
+            return "Dados do cliente\n\n"+composicao;
+
         }
 
         public string Consulta()
